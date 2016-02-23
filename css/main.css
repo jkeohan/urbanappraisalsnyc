@@ -1,0 +1,608 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	cursor: default;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+h3 {
+	font-family: 'Merriweather', serif;
+	font-size: .8em;
+	font-weight: bold;
+}
+p {
+	margin: 0 0 1.5em 0;
+}
+
+a:link, a:visited{
+	color: white !important;
+	text-decoration: none !important;
+}
+
+.button {
+    width: 20px;
+    display: inline-block;
+    width: 190px;
+    border-radius: 200px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 2%;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#page-header {
+	background: white;
+	color: white;
+	overflow: hidden;
+/*	border-bottom: 4px solid yellow;
+*/	padding: 0 3%;
+
+}
+#page-header a {
+	/* color: inherit; */
+	text-decoration: none;
+}
+#page-header h1 {
+	float: left;
+	color: white;
+	font-family: 'Merriweather', serif;
+	font-size: 1.5em;
+	/* margin: 20px 0 0 0; */
+	/* line-height: .3; */
+}
+
+.orange{ color: #EE7933; margin-right:7px; }
+.blue {color:  #A8D8E2;font-style: italic;}
+
+#page-header nav {
+	float: right;
+	font-size: .7em;
+}
+#page-header nav li {
+	float: left;
+	
+}
+#page-header nav a {
+	display: block;
+	padding: 20px 15px;
+	font-size: 1.5em;
+	color: #EE7933 !important;
+}
+#page-header nav li a:hover {
+	color:  #A8D8E2;;
+}
+#page-header nav li.active a {
+	background: #666;
+}
+#page-header nav strong {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+#page-header nav strong a {
+}
+
+#accordion .panel-heading {
+	background: rgba(238,121,51,.6);
+}
+
+#accordion .panel-default{
+	border:0;
+}
+
+
+.tagline {
+	display: inline-block;
+	/* width: 500px; */
+	font-family: 'Merriweather', serif;
+	/* text-align: center; */
+	margin: 0 auto;
+	padding: .5em 3%;
+	font-size: 1.25em;
+	line-height: 1em;
+	font-style: italic;
+	background: rgba(238,121,51,.7);
+	border-top: 1px solid #AAA;
+	border-radius: 10px;
+}
+.tagline del {
+	color: #999;
+}
+.tagline ins {
+	text-decoration: none;
+	border-bottom: 3px solid yellow;
+}
+
+.carousel-inner {
+	width:100%
+}
+
+.carousel-inner .item img {
+	width:100%;
+	height: 600px !important;
+}
+
+ol.carousel-indicators {
+	text-align: right !important;
+	padding-right: 30px;
+	bottom: 100px;
+}
+
+.left.carousel-control{
+	width:5%;
+}
+
+.right.carousel-control{
+	width:5%;
+}
+
+.glyphicon-chevron-right {
+	font-size:50px !important;
+	    margin-right: 15px !important;;
+}
+
+.glyphicon-chevron-left:before {
+	font-size:50px !important;
+}
+
+.carousel-caption {
+	height: 250px;
+    width: 400px;
+    padding: 2% 4% !important;
+    text-align: left !important;
+    border-radius: 5%;
+}
+
+.carousel-caption h3{
+	 font-size: 40px;
+}
+
+.carousel-caption ul{
+	 font-size: 15px;
+	 margin-bottom:20px;
+}
+.carousel-caption.estateplanning {
+    background-color: rgba(238,121,51,.3);
+    height: 250px;
+    width: 400px;
+    padding: 20px;
+    right;:60%!important;
+    left: 60%;
+    top: 20%;
+    right;:60%;
+    text-shadow: rgba(0, 0, 0, 0.85098) 0px 3px 3px;
+}
+
+.carousel-caption.estateplanning  h3 {
+	color:#EE7933;
+	text-shadow: rgba(0, 0, 0, 0.85098) 0px 3px 3px;
+	font-size: 30px;
+	margin-top: 0px;
+}
+
+.estateplanning a {
+	border: 3px solid #EE7933;
+	margin-left: 25px;
+}
+
+
+.carousel-caption ul li {
+	font-size: 1.2em;
+	text-align: left;
+	/* margin-left: 40px; */
+}
+
+.presale {
+    height: 250px;
+    width: 400px;
+    padding: 20px;
+    left: 60% !important;
+    top: 20%;
+    text-shadow: rgba(0, 0, 0, 0.85098) 0px 3px 3px;
+		background: rgba(168,216,226,.7);
+}
+
+.presale h3{
+	color: rgb(168, 226, 223);
+}
+
+.presale a{
+    border: 3px solid rgb(168, 226, 223);
+}
+
+.presale a:hover{
+	background-color:rgb(168, 226, 223);
+	color:white;
+	text-decoration:none;
+	transition: all .2s ease-in-out;
+}
+
+.bankruptcy{
+	 /* text-align: left; */
+	 height: 250px;
+	 width: 400px;
+	 /* padding: 20px; */
+	 left: 60% !important;
+	 top: 20%;
+	 text-shadow: rgba(0, 0, 0, 0.85098) 0px 3px 3px;
+	 background: rgba(111, 182, 134, 0.5);
+	 color: white;
+}
+
+.bankruptcy h3{
+	rgb(29, 95, 49);
+	color: #107610;
+}
+
+.bankruptcy a{
+	border: 3px solid rgb(111, 255, 134);
+	/* border:  3px solid #107613; */
+}
+
+.bankruptcy a:hover{
+	background-color:rgb(111, 182, 134);
+	color:white;
+	text-decoration:none;
+	transition: all .2s ease-in-out;
+}
+
+.banner {
+	background: url(../images/clinton-hill-brooklyn-townhouse-in-fall.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	padding: 6% 3% 0 3%;
+	box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+	height: 570px;
+	text-align:center;
+}
+
+.blurb {
+	background: rgba(255,255,255,.8);
+	width: 34%;
+	margin: 0 auto;
+	padding: 4%;
+	float: right;
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+.touts {
+	/* text-align: center; */
+	padding:20px;
+	/* background: #EEE; */
+	/* background: white; */
+	overflow: hidden;
+	padding: 2% 2%;
+	/* background-color: #ffffff; */
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	/* width: 80%; */
+	padding-left: 200px;
+	margin-top: 40px;
+}
+.tout {
+	color:black;
+	float: left;
+	width: 20.3333%;
+	padding: 2% 3%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+	/* 	background: url("../images/appraiser_seal_Gray.png") no-repeat center top; */
+	/* 	background-size: 150px; */
+	text-align:center;
+	background: rgba(238,121,51,.7);
+	border-radius: 50%;
+	margin: 10px;
+}
+
+.tout.blue {
+	 background: rgba(168,216,226,.9);
+}
+
+.tout img {
+	width:150px;
+	height: 150px;
+}
+.blur {-webkit-filter: blur(3px); filter: blur(3px);}
+.saturate { -webkit-filter: saturate(3); filter: saturate(3);}
+.sepia {-webkit-filter: sepia(100%); filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg); filter: hue-rotate(180deg);}
+.tout:last-child {
+	box-shadow: none;
+}
+.tout .button {
+	background: #C6C6C6;
+}
+
+.services .panel-group. panel-heading{
+	background: rgba(238,121,51,.4);
+}
+
+.panel.panel-primary {
+	overflow:scroll;
+}
+
+
+.panel-primary .panel-heading {
+	opacity:.5;
+    color: #000;
+    /* border-color: #337ab7; */
+    background-color: rgba(238,121,51,.4)
+}
+
+.panel-primary>.panel-body {
+	padding:30px;
+}
+
+.services {
+	padding: 42px;
+	text-align:center;
+	/* background: rgba(238,121,51,.4); */
+}
+
+.panel {
+	height:354px;
+}
+
+.panel-group .panel{
+	height:auto;
+}
+
+.card h2 {
+	font-size: 24px;
+    padding: 0;
+    margin: 0 0 30px 50px;
+}
+
+.card a {
+	font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 16px;
+}
+
+ul.prod-list {
+	list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul.prod-list li
+{
+	background-repeat: no-repeat;
+	padding-left: 100px;
+	margin-bottom: 40px;
+}
+
+ul.prod-list p {
+	margin:0px
+}
+
+.icon-sem {
+	/* background: url('http://i.yellowpages.com/d49_icon-sem_v1.gif') no-repeat top left; */
+	text-align:left;
+	background: url('../images/bankruptcy.png') no-repeat top left;
+	background-size: 80px;
+	}
+
+.icon-sem a{
+	color:blue !important;
+	    margin-bottom: 15px;
+    display: block;
+    font-size: 1.5em;
+}
+
+.icon-sem p {
+	font-size:1.2em;
+}
+
+.services ul {
+	/* float:left; */
+	/* width:70%; */
+	/* display: inline-block; */
+}
+
+.services ul h3 {
+	font-size:30px;
+}
+
+.service ul li {
+	/* display:inline-block; */
+	border-radius:10%;
+	padding: 1%;
+	/* margin:2%; */
+	font-size: 0.9em;
+	/* background: rgba(238,121,51,.4); */
+	text-align: left;
+}
+
+.services .panel-primary .panel-body{
+	overflow: scroll;
+}
+
+.services .panel-body.services-list{
+	padding:5px;
+}
+
+.serviceLocations {
+	float:right;
+	width:30%;
+}
+.profiles {
+	background: #C6C6C6;
+	padding: 10px;
+}
+
+.team {
+	background: rgba(168,216,226,.3);
+	padding: 3% 0;
+}
+
+.members {
+	width: 70%;
+	/* margin: 0 auto; */
+	text-align:center;
+	overflow: hidden;
+	float: left;
+}
+
+.member {
+	float:left;
+	display: inline-block;
+	padding: 3% 5%;
+}
+
+.member img {
+	border-radius:10%;
+}
+
+.contact{
+	padding: 14px 5px;
+	float:right;
+	width: 30%;
+}
+
+.contact h3{
+	   margin-top: 20px;
+	   /* margin-bottom: 20px; */
+}
+
+.contact h4{
+	margin-top:20px;
+	margin-bottom:10px
+
+}
+
+.contact ul li{
+	    counter-increment: li;
+	    /* list-style-type: none; */
+	    margin: 0 0 0 10px;
+	    /* position: relative; */
+}
+
+.contact p {
+	margin-top:12%
+}
+
+.contact p.callus{
+	background:  rgba(238,121,51,.4);
+	padding: 10px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+ul li.check:before{
+	color: #79a8cd;
+	content: '\f058';
+	font: normal normal 18px/0 'Fontawesome';
+	margin-top: 13px;
+	margin-right: 10px;
+}
+.cards {
+	overflow: hidden;
+}
+.card {
+	float: left;
+	width: 25%;
+}
+.card img {
+	max-width: 100%;
+}
+.card article {
+	background: white;
+	margin: 10px;
+	padding: 10px;
+}
+.card .button {
+	font-size: .75em;
+}
+
+.tags {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.tags li {
+	float: left;
+}
+.tags li a {
+	display: block;
+	background: #666;
+	padding: 1px 12px;
+	border-radius: 100px;
+	font-size: .75em;
+	margin: 0 5px 5px 0;
+	color: white;
+	text-decoration: none;
+}
+
+footer {
+	background: black;
+	color: white;
+	padding: 2% 3%;
+} 
+
+.prod-list .icon-sem.estate-planning a {
+ 	color:rgb(238,121,51) !important;
+}
+
+@media only screen and (max-width: 768px) {
+
+.carousel-caption {
+	left:40% !important;
+}
+
+ol.carousel-indicators{
+	bottom:30% !important;
+	margin:0 auto !important;
+	right:17%;
+	width: 20% !important;
+	% !important;
+	text-align:center !important;
+	padding:0px !important;
+}
+
+
+.carousel-indicators li {
+	width:20px !important;
+	height:20px !important;
+}
+
+#page-header h1 {
+		margin:0;
+		line-height:1.5;
+}
+
+#page-header nav a {
+	line-height:2;
+	padding: 0 10px;
+
+}
+nav ul li a {
+
+}
+
+nav ul li h1 {
+
+
+}
+
+
+
+}
+}
+
+
+
+
