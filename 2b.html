@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample page</title>
+    <style>
+      .main { width: 960px; margin: 0 auto; }
+      .header { text-align: center; margin-bottom:5px;}
+      .sidebar { width: 180px; float:left;}
+      .sidebar p { margin-top:0px;}
+      .content-area { width: 780px; float:right; }
+      .chat-table { width: 100%; }
+      .chat-table td { width: 260px; }
+      /*<!-- exam stated the widths were off.  originally i had set the widths to be % and used margin to create the offset.  I've updated the code to hard code width and now floating items-->*/
+      .my-message { 
+        width:504px;
+        background-color: lightblue; 
+        float:right;
+        margin:2px 0;
+          }
+      .partner-message { 
+        background-color: red; 
+        width:504px;
+        float:left;
+        margin:2px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">Your Chat Application</div>
+      <div class="sidebar">
+        <p>Active chats:</p>
+         <ul>
+          <li>Jane and me</li>
+          <li>Walter and me</li>
+        </ul>
+      </div>
+      <div class="content-area">
+        <div class="partner-message">Messages written to me are shown a little to the left.</div>
+        <div class="my-message">Messages written by me are shown a little to the right.</div>
+      </div>
+    </div>
+  </body>
+</html>
+

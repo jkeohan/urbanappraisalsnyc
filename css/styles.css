@@ -1,0 +1,577 @@
+body {
+	font-family: 'helvetica-w01-light', 'helvetica-w02-light','Source Sans Pro', sans-serif !important;
+	font-size: 20px;
+	line-height: 1.5;
+	cursor: default;
+}
+
+.clearfix {
+	content:"";
+	clear:both;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+h2 { 
+	 margin-bottom: 30px !important;
+	 padding-bottom: 30px !important;
+	 text-align:center; 
+   border-bottom: 1px solid gray;
+}
+/********* NAVIGATION **********/
+
+#page-header .container { padding-right:0;}
+#page-header .navbar { border:none !important; }
+
+#page-header .navbar.navbar-default {
+	margin-bottom: 0;
+	background-color: #fff;
+}
+
+#page-header .navbar .navbar-header h1 {
+	margin-top:15px;
+	font-size: 1.5em;
+}
+
+#page-header nav a {
+	display: block;
+	color: #EE7933 !important;
+}
+
+.orange{ color: #EE7933; margin-right:7px; }
+.blue {color:  #A8D8E2;font-style: italic;}
+
+.estate-planning { color:rgb(238,121,51) ;}
+.presale { color:rgb(95,190,222) ;}
+.bankruptcy { color: rgb(111, 182, 134) ;}
+.divorce { color: rgb(221, 58, 58);}
+/********* CAROUSEL **********/
+.carousel-inner {
+	width:100%
+}
+
+.carousel-indicators {
+	bottom:10px !important;
+}
+
+.carousel-indicators li {
+	height:15px !important;
+	width:15px !important;
+}
+
+.carousel-inner .item img {
+	width:100% ;
+	height: 600px !important;
+}
+
+ol.carousel-indicators {
+	/* text-align: right !important; */
+	/* padding-right: 30px; */
+	/* bottom: 100px; */
+}
+
+
+
+.left.carousel-control{
+	width:5%;
+}
+
+.right.carousel-control{
+	width:5%;
+}
+
+.glyphicon-chevron-right {
+	font-size:50px !important;
+	    margin-right: 15px !important;;
+}
+
+.glyphicon-chevron-left:before {
+	font-size:50px !important;
+}
+
+.carousel-caption {
+	height: 250px;
+	width: 400px;
+	padding: 2% 4% !important;
+	text-align: left !important;
+	border-radius: 5%;
+}
+
+.carousel-caption h3{
+	 font-size: 40px;
+	 margin-top: 0px;
+	 text-shadow: rgba(0, 0, 0, 0.85098) 0px 3px 3px;
+}
+
+.carousel-caption a {
+	 transition: all .2s ease-in-out;
+}
+
+.carousel-caption a:hover{
+	color:white;
+	text-decoration:none;
+	transition: all .2s ease-in-out;
+}
+
+.carousel-caption ul{
+	 font-size: 15px;
+	 margin-bottom:20px;
+}
+.carousel-caption.estateplanning {
+    background-color: rgba(238,121,51,.3);
+    text-shadow: rgba(0, 0, 0, 0.85098) 0px 3px 3px;
+}
+
+.carousel-caption.estateplanning  h3 {
+	/* color:#EE7933; */
+	font-size: 30px;
+}
+
+.estateplanning a {
+	border: 3px solid #EE7933;
+}
+
+.estateplanning a:hover{
+	background-color:rgba(238,121,51,0.4);
+}
+
+.carousel-caption.presale {
+   /* text-shadow: rgba(0, 0, 0, 0.85098) 0px 3px 3px;*/
+    background: rgba(168,216,226,.7); 
+}
+
+.presale h3{
+	/* color: rgb(168, 226, 223); */
+}
+
+.presale a{
+    border: 3px solid rgb(168, 226, 223);
+    /*transition: all .2s ease-in-out;*/
+}
+
+.presale a:hover{
+	background-color:rgba(168, 226, 223,0.4);
+}
+
+.bankruptcy{
+/* 	 text-shadow: rgba(0, 0, 0, 0.85098) 0px 3px 3px; */
+/* 	 background: rgba(111, 182, 134, 0.5); */
+}
+
+.carousel-caption.bankruptcy {
+   /* text-shadow: rgba(0, 0, 0, 0.85098) 0px 3px 3px;*/
+    background: rgba(111, 255, 134,0.4); 
+}
+
+.bankruptcy h3{
+	rgb(29, 95, 49);
+	/* color: #107610; */
+}
+
+.bankruptcy a{
+	border: 3px solid rgb(111, 255, 134);
+}
+
+.bankruptcy a:hover{
+	background-color:rgba(111, 182, 134,0.4);
+	transition: all .2s ease-in-out;
+}
+
+.carousel-caption.presale {
+	font-size: 1.2em;
+	text-align: left;
+	/* margin-left: 40px; */
+}
+
+#myCarousel .container {
+	   width: 100%;
+    padding: 0px;
+}
+
+.button {
+    width: 20px;
+    display: inline-block;
+    width: 190px;
+    border-radius: 200px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 2%;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+
+/********* SERVICES **********/
+
+.icon-sem h4 {
+	font-size: 21px!important;
+}
+
+.services a:hover {
+	text-decoration: none;
+}
+.services {
+	text-align:center;
+	/* background: rgba(238,121,51,.4); */
+}
+
+.services .container{/* width: 100%; */}
+
+/*.services h2 {
+	margin-bottom: 30px;
+}*/
+
+.services ul h3 {
+	font-size:30px;
+}
+
+.service ul li {
+	/* display:inline-block; */
+	border-radius:10%;
+	padding: 1%;
+	/* margin:2%; */
+	font-size: 0.9em;
+	/* background: rgba(238,121,51,.4); */
+	text-align: left;
+}
+
+.services .panel-primary .panel-body{
+	overflow: scroll;
+}
+
+.services .panel-body.services-list{
+	padding:5px;
+}
+
+.serviceLocations {
+	float:right;
+	width:30%;
+}
+
+ul.prod-list {
+	list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul.prod-list li
+{
+	background-repeat: no-repeat;
+	padding-left: 100px;
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+ul.prod-list p {
+	margin:0px
+}
+
+.icon-sem {
+	/* background: url('http://i.yellowpages.com/d49_icon-sem_v1.gif') no-repeat top left; */
+	text-align:left;
+/*	background: url('../images/bankruptcy.png') no-repeat top left;
+	background-size: 80px;*/
+	}
+
+.icon-sem i{
+	float:left;
+	margin-left:-90px;
+}
+
+.icon-sem a{
+	    margin-bottom: 15px;
+    display: block;
+    font-size: 1.5em;
+}
+
+.icon-sem p {
+	font-size:1.2em;
+}
+
+
+/********* TEAM MEMBERS **********/
+
+.team {
+	background: rgba(238,121,51,.3);
+	/* padding:10px; */
+	font-family: helvetica-w01-light, helvetica-w02-light;
+}
+
+/*.team h2 { text-align:center; }*/
+
+.members {
+	width: 60%;
+	/* margin: 0 auto; */
+	text-align:center;
+	overflow: hidden;
+	float: left;
+}
+
+.member {
+	/* float:left; */
+	display: block;
+	padding: 3% 0%;
+	text-align:center;
+	/* width: 20% !important; */
+}
+
+.member img {
+	    border-radius: 50%;
+	    height: 150px;
+	    width: 150px;
+	    /* float: left; */
+	    display: inline-block;
+}
+
+.member hr {
+	    /* margin: 0 0 1.5rem; */
+	    width: 4.5rem;
+	    color: black;
+	    background-color: black;
+	    height: .2em;
+}
+
+.contact{
+	/* width: 35%!important; */
+	padding-left: 15px !important;
+	overflow: hidden;
+	/* margin-top: -20px; */
+}
+
+.contact h3{
+	   margin-top: 20px;
+	   /* margin-bottom: 20px; */
+}
+
+.contact h4{
+	margin-top:20px;
+	margin-bottom:10px
+
+}
+
+.contact ul li{
+	    counter-increment: li;
+	    /* list-style-type: none; */
+	    margin: 0 0 0 10px;
+	    /* position: relative; */
+}
+
+.contact p {
+	margin-top:12%;
+	/* width: 242px; */
+}
+
+.contact p.callus{
+	background:  rgba(238,121,51,.4);
+	padding: 10px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+ul li.check:before{
+	color: #79a8cd;
+	content: '\f058';
+	font: normal normal 18px/0 'Fontawesome';
+	margin-top: 13px;
+	margin-right: 10px;
+}
+
+footer {
+	background: black;
+	color: white;
+	padding: 2% 3%;
+} 
+
+
+/*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+
+    /*==========  NAVIGATION ==========*/
+
+    ##page-header navbar ul {
+    	width:100%;
+    }
+    @media only screen and (min-width : 320px) {
+    	#myCarousel .carousel-inner .carousel-caption { left:20%; top: 20%;}
+    	#myCarousel .glyphicon { display:none;}
+					.carousel-inner ol.carousel-indicators {
+				  	left: 20%;
+				    top: 70%;
+				    height: 20px;
+						margin:0;
+					}	
+			.services { padding:10px 10px;}
+        .services .container { 
+        		width:100%;
+        }
+
+        ul.prod-list li{
+        	margin-bottom: 10px;
+        }
+
+        .services p {
+				font-size: 1em;
+			}
+				.icon-sem a {
+					margin-bottom: 5px;
+				}
+				.member { padding: 40px;}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+				#myCarousel .carousel-inner .carousel-caption { left:20%; top: 20%;}
+				#myCarousel .glyphicon { display:block;}
+				#myCarousel	.carousel-inner ol.carousel-indicators {
+				  	/* left: 20%; */
+				  	top: 70%;
+				  	height: 20px;
+				  	margin:0;
+				 }	
+        ul.prod-list li{
+        	margin-bottom: 40px;
+        }
+				.services {
+				/*	background:pink;*/
+				}
+        .services p {
+				font-size: 1em;
+
+			}
+				.icon-sem a {
+					margin-bottom: 5px;
+				}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    	.team .container {width: 90%;}
+    	.team .contact .speakto { padding: 0 30px;
+    margin-bottom: 30px;}
+    	.team .contact h3 {/* font-size: 20px; */}
+    	#page-header .container { width: 90%;}
+   /* 	.carousel-caption { left:45%;}*/
+			#myCarousel .carousel-inner .carousel-caption {left: 29%;}
+					.carousel-inner ol.carousel-indicators {
+				  	left: 20%;
+				  	top: 70%;
+				  	height: 20px;
+				  	margin:0;
+				 }	
+			.services { 
+        	padding:10px 10px;
+        		/*	background:orange;*/
+        }
+
+			.services p { font-size: 1em;}
+			.services .container{ width:90%;}
+
+			/*==========  TEAM ==========*/
+
+			.team { position:relative;}
+			.team h3 {		
+				/*text-align: center;*/
+   			font-size: 25px;
+   		    /*margin-top: -30px;*/
+   		  }
+
+   		 .team .team-description {
+   		 		text-align: center;
+   		 }
+
+   		.team .member {
+   			padding-bottom:10px;
+   		}
+
+   		.team hr {
+   			margin-top:15px;
+   			margin-bottom:15px;
+   		}
+   		 .team .contact .speakto {
+   		 	float: left;
+   		 	    width: 50%;
+    padding-left: 68px
+   		 }
+   		 .team .contact .social-media {
+   		 	float: right;
+    width: 50%;
+    padding: 30px;
+   		 }
+
+   		 .team .contact .social-media a{
+   		 	display:inline-block;
+   		 	padding:left:10px;	 	 
+   		 }
+   		 .social-media ul li:hover{
+   		 	background-color: pink;
+   		 }
+
+   		 .team .contact .social-media .social-icon  i{
+   			 padding-left: 10px;
+   			 font-size: 30px;
+   			 margin-bottom: 15px;
+			  }
+			  .fa-facebook-square{
+				 border-left: 3px solid rgb(54, 97, 163);
+				 color:rgb(54, 97, 163);
+				 }
+			  .fa-twitter-square {
+			  	border-left: 3px solid rgb(62, 166, 233);
+			  	color:rgb(62, 166, 233);
+			  }
+				.fa-linkedin-square {
+			  border-left: 3px solid rgb(0,119,181);
+			  color:rgb(0,119,181);
+			}
+
+			/*	a.social-icon ul li:hover{
+				 background: rgb(54, 97, 163);
+				 }
+				 	a:visited{
+				 	color: none;
+				 }
+				 	a:hover{
+				 background: rgb(54, 97, 163);
+				 }*/
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    		#myCarousel .carousel-inner .carousel-caption { left:60%;top:20%;}
+												.services {
+			/*		background:green;*/
+				}
+				.carousel-inner ol.carousel-indicators {
+				   margin:0;
+				    top: 70%;
+				    height: 20px;
+				    width: 20%;
+				    left:65%;
+					}
+				.services p {font-size: 1.2em; }
+				.team .container {width: 90; padding:10px 10px 100px 10px}
+				.team .member {/* width: 240px; */}
+				.team .contact {
+				       width: 700px;
+				       position: absolute;
+				       right: 0;
+				         left: 47%;
+    top: 30%;
+				    }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    				.carousel-inner ol.carousel-indicators {
+					}
+
+    }
