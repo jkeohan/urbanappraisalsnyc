@@ -2,21 +2,42 @@
 <html lang="en-us">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--  <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Urban Appraisals NY</title>
+	<!-- FONTS AND ICONS -->
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic' rel='stylesheet' type='text/css'>
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+
+	<!-- RESET AND CUSTOM STYLES.  DONT NOT PLACE STYLES BELOW BOOSTRAP AS IT WILL MAKE VISUAL DESIGN CHANGES -->
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/styles.css">
+
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/custom.css">
 
+	<!-- BOOTSTRAP, JQUERY, SCROLLTO, LOCALSCROLL -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/libs/jquery/jquery.localScroll-1.4.0/jquery.localscroll.js" type="text/javascript"></script> 
+	<script src="js/libs/jquery/jquery.scrollTo-2.1.2/jquery.scrollTo.js" type="text/javascript"></script> 
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-	<title>Urban Appraisals NY</title>
+	<!-- ANGULAR -->
+	<script src="js/libs/angular/angular.min.js"></script>
+	<script src="js/libs/angular/angular-route.min.js"></script>
+	<script src="js/libs/angular/angular-animate.min.js"></script>
+	<script src="js/app.js"></script>
 
+<!-- USED TO TRANSITION PAGE TO SECTION WHEN NAV LINK CLICKED -->
 	<script type="text/javascript">
+	$(document).ready(function() {
+	   $('.nav').localScroll({duration:800});
+	   $('.carousel-caption').localScroll({duration:800});
+	});
+	</script>
+
+ <script type="text/javascript">
  //        $(document).ready(function(){
  //           // set up hover panels
  //           // although this can be done without JavaScript, we've attached these events
@@ -27,235 +48,288 @@
  //            $(this).removeClass('flip');
  //        });
  //    });
+
 </script>
 </head>
-<body>
+
+<body ng-app="myApp" ng-controller="mainCtrl">
 	<header id="page-header">
-		<div class="wrapper">
-			<h1><a href="index.html"><span class="orange">Urban</span><span class="blue">Appraisals NY</span></a></h1>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>		
-					<li><a href="how.html">Appraisal Services</a></li>			
-					<li><a href="index.html#team">Our Team</a></li>			
-					<li><a href="blog.html">Contact Us</a></li>			
-				</ul>
+	 <div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button class="btn btn-default navbar-toggle collapsed"
+									data-toggle="collapse"
+									data-target="#collapsemenu">
+							<span class="icon-bar"></span>        
+	         		<span class="icon-bar"></span> 
+	          	<span class="icon-bar"></span> 
+					</button>
+					<h1><a href="index.html"><span class="orange">Urban</span><div class="grad"></div><span class="blue">Appraisals</span></a>
+					</h1>
+				</div>
+				<div class="collapse navbar-collapse" id="collapsemenu">
+					<ul class="nav navbar-nav ">
+						<li><a href="#">Home</a></li>		
+						<li><a href="#appraisal-services">Appraisal Services</a></li>			
+						<li><a href="#team">Our Team</a></li>			
+						<li><a href="#contact">Contact Us</a></li>			
+					</ul>
+				</div>
 			</nav>
-		</div>
+			</div>
 	</header>
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>
-
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox">
-
-			<div class="item active">
-				<img src="images/clinton-hill-brooklyn-townhouse-in-fall.jpg" alt="Chania" >
-				<div class="carousel-caption estateplanning">
-				
-
-</script>
-<h3 class="tagLine">Estate Planning</h3>
-<ul>
-	<li>Estate Settlement</li>
-	<li>Probate</li>
-	<li>Estate Tax</li>
-</ul>
-<a class="button estate-settlement" href="#services">Additional Services</a>
-</div>
-</div>
-
-
-<div class="item">
-	<img src="images/manhattan4.jpg" alt="Chania" >
-	<div class="carousel-caption presale">
-		<h3 class="tagLine">Presale</h3>
-		<ul>
-			<li>Unbiased and Objective Conclusions</li>
-			<li>Neighborhood Specific Research</li>
-			<li>Fair Market Value Appraisal </li>
-		</ul>
-		<a class="button additional-services" href="#bankruptcy">Additional Services</a>
-	</div>
-</div>
-
-	     <!--   <div class="item">
-	      	<img src="images/home1.jpg" alt="Chania" >
-		      <div class="carousel-caption bankruptcy">
-		      	<h3 class="tagLine">Bankruptcy</h3>
-		      	<ul>
-		      		<li>Estate Settlement</li>
-		      		<li>Probate</li>
-		      		<li>Estate Tax</li>
-		      	</ul>
-		      		<a class="button bankrupcy" href="#bankruptcy">Additional Services</a>
+	<!-- CAROUSEL -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <div class="container">
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+          <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			      <li data-target="#myCarousel" data-slide-to="3"></li>
+			    </ol>
+					<!-- FIRST ROTATING BANNER PIC -->
+		      <div class="item active">
+		      	<img class="img-ressponsive" src="images/clinton-hill-brooklyn-townhouse-in-fall.jpg" alt="Chania">
+			      <div class="carousel-caption estateplanning">
+			      	<h3 class="tagLine">Estate Planning</h3>
+			      	<ul>
+			      		<li>Estate Settlement</li>
+			      		<li>Probate</li>
+			      		<li>Estate Tax</li>
+			      	</ul class="links">
+			      		<a class="button estate-settlement" href="#appraisal-services">Additional Services</a>		   
+			      </div>
 		      </div>
-		    </div> -->
-		  </div>
 
+			    <div class="item">
+		      	<img src="images/manhattan4.jpg" alt="Chania" >
+			      <div class="carousel-caption presale">
+			      	<h3 class="tagLine">Presale</h3>
+			      	<ul>
+			      		<li>Unbiased and Objective Conclusions</li>
+			      		<li>Neighborhood Specific Research</li>
+			      		<li>Fair Market Value Appraisal </li>
+			      	</ul>
+			      	<a class="button presale" href="#bankruptcy">Additional Services</a>
+			      </div>
+		     	</div>
 
+					<div class="item">
+		      	<img src="images/home1.jpg" alt="Chania" >
+			      <div class="carousel-caption bankruptcy">
+			      	<h3 class="tagLine">Bankruptcy</h3>
+			      	<ul>
+			      		<li>Estate Settlement</li>
+			      		<li>Probate</li>
+			      		<li>Estate Tax</li>
+			      	</ul>
+			      		<a class="button bankrupcy" href="#appraisal-services">Additional Services</a>
+			      </div>
+		      </div>
 
-		  <!-- Left and right controls -->
-		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		  	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		  	<span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		  	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		  	<span class="sr-only">Next</span>
-		  </a>
-		</div>
+      		<div class="item">
+		      	<img src="images/divorce1.jpg" alt="Chania" >
+			      <div class="carousel-caption divorce">
+			      	<h3 class="tagLine">Divorce</h3>
+			      	<ul>
+			      		<li>Neutral Appraisals</li>
+			      		<li>Probate</li>
+			      		<li>Estate Tax</li>
+			      	</ul>
+			      		<a class="button divorce" href="#appraisal-services">Additional Services</a>
+			      </div>
+     		  </div>
 
-		<section class="services">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 card">
+		    </div><!-- CAROUSEL -->
+
+	    <!-- Left and right controls -->
+	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+
+	   </div><!--container-->
+	</div><!--myCarousel-->
+
+		<a id="appraisal-services"></a>
+	  <section class="services">
+	  	<div class="container">
+	  		<div class="row">
+	  			
+	  			<h2>Appraisal Services</h2>
+	  			<p class="blurb">Urban Appraisals New York is a boutique business that provides appraisal and consulting services on residential properties throughout the New York City metropolitan area.</p>
+	  			<div class=" col-sm-6 col-md-6 col-lg-6">
+	  				<ul class="prod-list">
+	  					<li class="icon-sem ">
+								<i class="fa fa-check-circle-o fa-5x text-success" style="color:rgb(238,121,51)"></i>
+	  						<h4 class="estate-planning" >Estate Planning</h4>
+	  						<p>Our NY certified appraisers will provide the necessary proof of your
+	  						homes value to determine acceptability and meet all court requirements. 
+	  						All findings, conclusions and reports are confidential</p		
+	  					</li>
+	  					<li class="icon-sem ">
+	  						<i class="fa fa-home fa-5x text-success" style="color:rgb(95,190,222)"></i>
+	  						<h4 class="presale">Presale</h4>
+	  						<p>Our NY certified appraisers will provide the necessary proof of your
+	  						homes value to determine acceptability and meet all court requirements. 
+	  						All findings, conclusions and reports are confidential</p		
+	  					</li>
+	  				</ul>
+	  			</div><!--col-->
+
+					<div class="col-sm-6 col-md-6 col-md-6">
 						<ul class="prod-list">
-							<li class="icon-sem estate-planning">
-								<a href="*">Estate Planning</a>
+							<li class="icon-sem">
+								<i class="fa fa-life-ring fa-5x text-success" style="color:rgb(111, 182, 134"></i>
+								<h4 class="bankruptcy">Bankruptcy</h4>
 								<p>Our NY certified appraisers will provide the necessary proof of your
-									homes value to determine acceptability and meet all court requirements. 
-									All findings, conclusions and reports are confidential</p		
-								</li>
-								<li class="icon-sem">
-									<a href="*">Presale</a>
-									<p>All findings, conclusions and reports are confidential</p>
-									<p>Courts require proof of home value to determine acceptability</p>
-									<p>Appraisal by certified appraiser meets court requirements</p>
-								</li>
-							</ul>
-						</div><!--col-->
+	  						homes value to determine acceptability and meet all court requirements. 
+	  						All findings, conclusions and reports are confidential</p		
+							</li>
+							<li class="icon-sem">
+								<i class="fa fa-university fa-5x text-success" style="color:rgb(221, 58, 58)"></i>
+								<h4 class="divorce">Divorce</h4>
+								<p>Our NY certified appraisers will provide the necessary proof of your
+	  						homes value to determine acceptability and meet all court requirements. 
+	  						All findings, conclusions and reports are confidential</p		
+							</li>
+						</ul>
+					</div><!--col-->
 
-						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 card">
-							<ul class="prod-list">
-								<li class="icon-sem">
-									<a href="*">Bankruptcy</a>
-									<p>All findings, conclusions and reports are confidential</p>
-									<p>Courts require proof of home value to determine acceptability</p>
-									<p>Appraisal by certified appraiser meets court requirements</p>
-								</li>
-								<li class="icon-sem">
-									<a href="*">Bankruptcy</a>
-									<p>All findings, conclusions and reports are confidential</p>
-									<p>Courts require proof of home value to determine acceptability</p>
-									<p>Appraisal by certified appraiser meets court requirements</p>
-								</li>
-							</ul>
-						</div><!--col-->
+					<div class="col-sm-6 col-md-6 col-md-6">
+						<ul class="prod-list">
+							<li class="icon-sem">
+								<i class="fa fa-heartbeat fa-5x text-success" style="color:rgb(111, 182, 134"></i>
+								<h4 class="bankruptcy">Medicaid</h4>
+								<p>Our NY certified appraisers will provide the necessary proof of your
+	  						homes value to determine acceptability and meet all court requirements. 
+	  						All findings, conclusions and reports are confidential</p		
+							</li>
+							<li class="icon-sem">
+								<i class="fa fa-clipboard fa-5x text-success" style="color:rgb(221, 58, 58)"></i>
+								<h4 class="divorce">Immigration</h4>
+								<p>Our NY certified appraisers will provide the necessary proof of your
+	  						homes value to determine acceptability and meet all court requirements. 
+	  						All findings, conclusions and reports are confidential</p		
+							</li>
+						</ul>
+					</div><!--col-->
 
-  	<!-- 			<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 card">
-  				<ul class="prod-list">
-  					<li class="icon-sem">
-  						<a href="*">Bankruptcy</a>
-  						<p>All findings, conclusions and reports are confidential</p>
-  						<p>Courts require proof of home value to determine acceptability</p>
-  						<p>Appraisal by certified appraiser meets court requirements</p>
-  					</li>
-  					<li class="icon-sem">
-  						<a href="*">Bankruptcy</a>
-  						<p>All findings, conclusions and reports are confidential</p>
-  						<p>Courts require proof of home value to determine acceptability</p>
-  						<p>Appraisal by certified appraiser meets court requirements</p>
-  					</li>
-  				</ul>
-  			</div> --><!--col-->
+					<div class="col-sm-6 col-md-6 col-md-6">
+						<ul class="prod-list">
+							<li class="icon-sem">
+								<i class="fa fa-file-text-o fa-5x text-success" style="color:rgb(111, 182, 134"></i>
+								<h4 class="bankruptcy">Tax Grievance</h4>
+								<p>Our NY certified appraisers will provide the necessary proof of your
+	  						homes value to determine acceptability and meet all court requirements. 
+	  						All findings, conclusions and reports are confidential</p		
+							</li>
+							<li class="icon-sem">
+								<i class="fa fa-arrows-alt fa-5x text-success" style="color:rgb(221, 58, 58)"></i>
+								<h4 class="divorce">Consulting</h4>
+								<p>Our NY certified appraisers will provide the necessary proof of your
+	  						homes value to determine acceptability and meet all court requirements. 
+	  						All findings, conclusions and reports are confidential</p		
+							</li>
+						</ul>
+					</div><!--col-->
 
-  		</div><!--row-->
-  	</div>
-  </section>
+	  		</div><!--row-->
+	  	</div>
+  	</section>
 
+	<a id="team"></a>
+	<section class="team">
+		<div class="container">
+			<div class="row">
+			<h2>Our Team</h2>
+			<p class="blurb">Our team consists of New York State Certified appraisers with over 15 years experience that are dedicated to the highest degree of ethics and professionalism. Our goal is to assist our clients in making more informed decisions based on our extensive knowledge, research and experience. All appraisal services are initiated and completed in conformity with the Uniform Standard of Professional Appraisal Practice (USPAP). 
+			</p>
+	<!-- 			<div class="member col-sm-12 col-md-12 ">
+					<div class="members">
+						<img class="sephia" src="images/headshot1.jpeg"  alt="seal">
+						<h4>Sean Blake</h4>
+						<hr>
+						<p>NY Certified Appraiser</p>
+					</div>
 
-  <section class="services" id="services">
-  	<div class="wrapper">
-
-  		s
-
-  	</div><!--wrapper-->
-  </section><!--services-->
-
-
-  <a name="team"></a>
-  <section class="team">
-  	<div class="wrapper">
-  		<div class="members">
-  			<div class="member">
-  				<!-- 			<div class="front"> -->
-  				<img class="sephia" src="images/headshot1.jpeg"  alt="seal">
-  				<!-- 			</div> -->
-				<!-- 	<div class="back">
-						<p>Some Texdt</p>
-					</div> -->
-					<h4>Sean Blake</h4>
-					<p>Certified Appraiser</p>
-				</div>		
-
-				<div class="member">
-					<img class="sephia" src="images/headshot2.jpeg"  alt="seal">
-					<h4>Brendan Blake</h4>
-					<p>Certified Appraiser</p>
-				</div>
-				<div class="member">
-					<img class="sephia" src="images/headshot3.jpeg"  alt="seal">
-					<h4>Luis Matias</h4>
-					<p>Certified Appraiser</p>
-				</div>
-			</div><!--members-->
-			<div class="contact">
-				<h3>Speak to an Appraiser Now</h3>
-
-				<h4>Give us a call to...</h4>
-				<ul>
-					<li class="check">Talk to an appraiser</li>
-					<li class="check">Get answers to your questions</li>
-					<li class="check">Get a price quote</li>
-					<li class="check">Schedule an appointment today</li>
-				</ul>
-				<p class="callus">	Call Us Today: (631) 343-4694</p>
-			</div><!--contact-->
-		</div>
-	</section>
-
-
-<!-- 	<div class="wrapper">
-		<section class="touts">
-			<section class="tout">
-				<header>
-					<img class="sephia" src="images/appraiser_seal_Gray.png"  alt="seal">
-					<h3>NY Certified Real Estate Appraiser</h3>
-				</header>
-			</section>
-			<section class="tout">
-				<header>
-				<img class="sephia" src="images/home_advisor_seal.Gray.png"  alt="seal">
-					<h3>Find a Developer</h3>
-				</header>
-				<p>Sreened & Approved HomeAdvisor</p>
-				<a class="button" href="developers.html">Start Your Search</a>
-			</section>
-			<section class="tout">
-				<header>
-					<h3>Find a Designer</h3>
-				</header>
-				<p>Need someone who can make a product intuitive and appealing? Get ready.</p>
-				<a class="button" href="designers.html">Start Your Search</a>
-			</section>
-		</section><!--touts -->
-		<section class="contact">
-
-
-		</section>
-		<footer>
-			<div class="wrapper">
-				© Appraisal Source LLC
+						<div class="members">
+						<img class="sephia" src="images/headshot2.jpeg"  alt="seal">
+						<h4>Brendan Blake</h4>
+						<hr>
+						<p>NY Certified Appraiser</p>
+					</div>
+				
+						<div class="members">
+						<img class="sephia" src="images/headshot3.jpeg"  alt="seal">
+						<h4>Luis Matias</h4>
+						<hr>
+						<p>NY Certified Appraiser</p>
+					</div>
+				</div> -->
 			</div>
-		</footer>
+		</div>
+		<a id="contact"></a>
+		<div class="contact">
+			<div class="wrap">
+				<h3>Speak to an Appraiser Now</h3>
+				<p class="callus"><strong>Call Us Today: </strong>  (631) 343-4694</p>
+				<!-- 	<h4>Give us a call to...</h4>
+					<ul>
+						<li class="check">Talk to an appraiser</li>
+						<li class="check">Get answers to your questions</li>
+						<li class="check">Get a price quote</li>
+						<li class="check">Schedule an appointment today</li>
+					</ul> -->
+				
+				</div>
+<!-- 				<div class="social-media">
+					<ul>
+						<a href="#" class="social-icon">
+								<li class="facebook">
+								<i class="fa fa-facebook-square fa-4x">  Facebook</i>
+								</li>
+						</a>
+						
+						<a href="#" class="social-icon">
+
+							<li>
+								<i class="fa fa-twitter-square">  Twitter</i>
+							</li>
+						</a>
+
+						<a href="#" class="social-icon">
+							<li>
+								<i class="fa fa-linkedin-square">  LinkedIn</i>
+							</li>
+						</a>
+					</ul>
+				</div> -->
+			</div><!--contact-->
+
+	<footer>
+		<div class="wrapper">
+			<span>© Urban Appraisals NYC</span>
+			<div class="text-center">
+					<ul class="list-inline social">
+						<li><a alt="" href="//www.facebook.com/ypforbusiness" target="_blank"><img alt="Facebook icon" border="0" class="socialImg" height="42" src="http://i-adsolutions.yp.com/sites/default/files/icons/facebookftr2.png" width="42" /></a></li>
+						<li><a alt="" href="//twitter.com/ypforbusiness" target="_blank"><img alt="Twitter icon" border="0" class="socialImg" height="42" src="http://i-adsolutions.yp.com/sites/default/files/icons/twitterftr2.png" width="42" /></a></li>
+						<li><a alt="" href="https://plus.google.com/+ypforbusiness/" target="_blank"><img alt="Google Plus icon" border="0" class="socialImg" height="42" src="http://i-adsolutions.yp.com/sites/default/files/icons/gglplusftr.png" width="42" /></a></li>
+						<li><a alt="" href="//www.linkedin.com/company/yp" target="_blank"><img alt="linkedin icon " border="0" class="socialImg" height="42" src="http://i-adsolutions.yp.com/sites/default/files/icons/linkedinftr.png" width="42" /></a></li>
+						<li><a alt="" href="//www.youtube.com/user/yp" target="_blank"><img alt="youtube icon image " border="0" class="socialImg" height="42" src="http://i-adsolutions.yp.com/sites/default/files/icons/youtubeftr.png" width="42" /></a></li>
+					</ul>
+				</div>
+		</div>
+	</footer>
 
 		<script src="js/bootstrap.min.js" type="text/js"></script>
-	</body>
-	</html>
+</body>
+</html>

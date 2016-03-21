@@ -1,8 +1,13 @@
+
 body {
 	font-family: 'helvetica-w01-light', 'helvetica-w02-light','Source Sans Pro', sans-serif !important;
 	font-size: 20px;
 	line-height: 1.5;
 	cursor: default;
+}
+
+p {
+	font-size:1.2em;
 }
 
 .clearfix {
@@ -14,9 +19,8 @@ body {
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
+    text-align: center;
 }
-
-
 
 h2 { 
 	 margin-bottom: 30px !important;
@@ -26,7 +30,7 @@ h2 {
 }
 /********* NAVIGATION **********/
 
-#page-header .container { padding-right:0;}
+#page-header .container {padding-left;: 0;padding-left: 0px;}
 #page-header .navbar { border:none !important; }
 
 #page-header .navbar.navbar-default {
@@ -36,7 +40,23 @@ h2 {
 
 #page-header .navbar .navbar-header h1 {
 	margin-top:15px;
+	text-align: center;
 }
+
+#page-header h1 a:hover{
+	text-decoration:none;
+}
+
+.grad {
+	display: inline-block;
+	width: 5px;
+	height: 40px;
+/*	background: linear-gradient(rgba(238,121,51,1),rgba(168,216,226,1));*/
+  background: linear-gradient(rgba(238,121,51,1),rgba(0,70,133,1));
+	margin: 0 5px;
+	margin-bottom: -10px;
+}
+
 
 #page-header nav li a {
 	display: block;
@@ -45,8 +65,12 @@ h2 {
 	line-height: 2.2;
 }
 
-.orange{ color: #EE7933; margin-right:7px; }
-.blue {color:  #A8D8E2;font-style: italic;}
+
+
+
+.orange{ color: #EE7933;/* margin-right:7px; */}
+/*.blue {color:  #A8D8E2;}/**/
+.blue {color:   #004685;}
 
 .estate-planning { color:rgb(238,121,51) ;}
 .presale { color:rgb(95,190,222) ;}
@@ -69,7 +93,7 @@ h2 {
 
 .carousel-inner .item img {
 	width:100%;
-	height: 800px !important;
+	height: 600px !important;
 }
 
 ol.carousel-indicators {
@@ -201,6 +225,22 @@ ol.carousel-indicators {
 	transition: all .2s ease-in-out;
 }
 
+.carousel-caption.divorce {
+	background-color: rgba(221, 58, 58,0.5);
+}
+
+.divorce h3{
+}
+
+.divorce a{
+	border: 3px solid rgb(221, 58, 58);
+}
+
+.divorce a:hover{
+	background-color:rgba(221, 58, 58,0.4);
+	transition: all .2s ease-in-out;
+}
+
 .carousel-caption.presale {
 	text-align: left;
 	/* margin-left: 40px; */
@@ -227,17 +267,26 @@ ol.carousel-indicators {
 
 /********* SERVICES **********/
 
+
+section .services {
+	text-align:center;
+	background-color: white;
+}
+
 .icon-sem h4 {
 	font-size: 21px!important;
+}
+
+.services .blurb{
+	margin: 0 auto;
+	padding-bottom: 40px;
+	width:80%;
 }
 
 .services a:hover {
 	text-decoration: none;
 }
-.services {
-	text-align:center;
-	/* background: rgba(238,121,51,.4); */
-}
+
 
 .services .container{/* width: 100%; */}
 
@@ -314,24 +363,29 @@ ul.prod-list p {
 
 /********* TEAM MEMBERS **********/
 
-.team {
-	background: rgba(238,121,51,.3);
-	/* padding:10px; */
-	font-family: helvetica-w01-light, helvetica-w02-light;
+
+
+section.team {
+    background-color: rgb(247, 247, 246) !important;
 }
 
-/*.team h2 { text-align:center; }*/
-
 .team .team-description {
-	font-size: 20px;
+	font-size: 1.2em;
+}
+
+.team .blurb {
+		margin: 0 auto;
+	padding-bottom: 40px;
+	width:80%;
 }
 
 .members {
-	width: 60%;
-	/* margin: 0 auto; */
-	text-align:center;
-	overflow: hidden;
-	float: left;
+		width: 30%;
+		/* margin: 0 auto; */
+		/* text-align:center; */
+		/* overflow: hidden; */
+		/* float: left; */
+		display: inline-block;
 }
 
 .member {
@@ -343,11 +397,10 @@ ul.prod-list p {
 }
 
 .member img {
-	    border-radius: 50%;
-	    height: 150px;
-	    width: 150px;
-	    /* float: left; */
-	    display: inline-block;
+			border-radius: 0%;
+			/* height: 9%; */
+			width: 75%;
+			display: inline-block;
 }
 
 .member hr {
@@ -359,15 +412,16 @@ ul.prod-list p {
 }
 
 .contact{
-	/* width: 35%!important; */
-	padding-left: 15px !important;
-	overflow: hidden;
-	/* margin-top: -20px; */
+	  background-color: rgba(238,121,51,0.1);
+	  text-align:center;
+	  /* width: 35%!important; */
+	  padding-left: 15px !important;
+	  overflow: hidden;
+	  /* margin-top: -20px; */
 }
 
 .contact h3{
-	   margin-top: 20px;
-	   /* margin-bottom: 20px; */
+	   	margin-bottom: 20px;
 }
 
 .contact h4{
@@ -384,12 +438,20 @@ ul.prod-list p {
 }
 
 .contact p {
-	margin-top:12%;
+	/* margin-top:12%; */
 	/* width: 242px; */
 }
 
+p.callus{
+	background-color: rgba(168,216,226,0.5);
+}
+
+.wrap{
+		width: 76%;
+		margin:30px auto;
+}
 .contact p.callus{
-	background:  rgba(238,121,51,.4);
+	/* background:  rgba(238,121,51,.4); */
 	padding: 10px;
 	border-radius: 20px;
 	text-align: center;
@@ -409,6 +471,14 @@ footer {
 	padding: 2% 3%;
 } 
 
+footer span{
+		float:left;
+}
+
+footer .text-center ul {
+	    width: 90%;
+	    x: 0 auto;
+}
 
 /*==========  Mobile First Method  ==========*/
 
@@ -451,8 +521,7 @@ footer {
 				#myCarousel .carousel-inner .carousel-caption { left:20%; top: 20%;}
 				#myCarousel .glyphicon { display:block;}
 				#myCarousel	.carousel-inner ol.carousel-indicators {
-				  	/* left: 20%; */
-				  	top: 56%;
+				  	top: 67%;
 				  	height: 20px;
 				  	margin:0;
 				 }	
@@ -476,13 +545,26 @@ footer {
 
 			/*==========  NAVIGATION ==========*/
 
+		#page-header .navbar .navbar-header {
+			float:none;
+		}
+		#page-header .navbar .navbar-header h1 {
+			text-align: center !important;
+		}
+
+		.navbar-nav {
+			float:none !important;
+			width: 80%;
+			margin: 0 auto;
+		}
+
 			/*==========  CAROUSEL ==========*/
     	.team .contact h3 {/* font-size: 20px; */}
     	#page-header .container { width: 90%;}
    /* 	.carousel-caption { left:45%;}*/
 			#myCarousel .carousel-inner .carousel-caption {left: 29%;}
 					.carousel-inner ol.carousel-indicators {
-				  	left: 20%;
+				  	left: 24%;
 				  	top: 70%;
 				  	height: 20px;
 				  	margin:0;
@@ -521,9 +603,9 @@ footer {
    			margin-bottom:15px;
    		}
    		 .team .contact .speakto {
-   		 	float: left;
-   		 	    width: 50%;
-    padding-left: 68px
+   		 	/* float: left; */
+   		 	/* width: 50%; */
+   		 	padding-left: 68px
    		 }
    		 .team .contact .social-media {
    		 	float: right;
@@ -578,20 +660,20 @@ footer {
 				}
 				.carousel-inner ol.carousel-indicators {
 				   margin:0;
-				    top: 70%;
-				    height: 20px;
-				    width: 20%;
-				    left:65%;
-					}
+				   top: 70%;
+				   height: 20px;
+				   width: 20%;
+				   left: 67%;
+				 }
 				.services p {font-size: 1.2em; }
-				.team .container {width: 90; padding:10px 10px 100px 10px}
+				.team .container {width: 90;padding: 10px 10px 80px 10px;}
 				.team .member {/* width: 240px; */}
 				.team .contact {
-				       width: 700px;
-				       position: absolute;
-				       right: 0;
-				       left: 50%;
-				       top: 30%;
+				       /* width: 700px; */
+				       /* position: absolute; */
+				       /* right: 0; */
+				       /* left: 50%; */
+				       /* top: 30%; */
 				    }
     }
 
@@ -600,4 +682,3 @@ footer {
     				.carousel-inner ol.carousel-indicators {
 					}
 
-    }
