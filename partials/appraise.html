@@ -1,0 +1,38 @@
+<!--ul>li*6>a-->	<!--.container>.row>.col-md-3.circledemo$*4>h4-->
+<div class="black">
+<div class="topimg">
+	<div class="desc-wrapper"><p>Single Family</p></div>
+	</div>
+</div>
+<div class="container main">
+	<div clas="row padded">
+	  <div class="propertylist col-xs-3">
+	  	<nav class="folder-nav">
+	  		<ul>
+	  			<li><h4>What We Appraise</h4></li>
+	  			<li ng-repeat="item in property">
+	  				   <a 
+	  				   	class="{{item.shorturl}}"
+	      				ng-class="{active: item.selected}"
+	      				ng-href="#/appraisals/{{item.shorturl}}"
+	      				ng-click="selectItem(item)">{{item.name}}
+	      				</a>		
+	  			</li>
+	  </div>
+	  <div ui-view class="acitve"></div>
+	</div>
+</div>
+<!-- 	<div class="row">
+		<div class="col-md-3 propertylist">			
+			<nav class="folder-nav">
+				<ul>
+					<li><h4>What We Appraise</h4></li>
+					<li><a href="">Single Family</a></li>
+					<li><a href="">Multi-Family</a></li>
+					<li><a href="">Cooperatives</a></li>
+					<li><a href="">Condominuims</a></li>
+					<li><a href="">Vacant Land</a></li>
+					<li><a href="">Prospective Development</a></li>
+				</ul>
+			</nav>
+		</div> -->

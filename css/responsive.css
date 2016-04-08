@@ -1,0 +1,205 @@
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+
+    /*==========  NAVIGATION ==========*/
+
+    ##page-header navbar ul {
+    	width:100%;
+    }
+    @media only screen and (min-width : 320px) {
+    	.animate-view-container.container { width: 100%; padding:0px;}
+    	#myCarousel .carousel-inner .carousel-caption { left:20%; top: 20%;}
+    	#myCarousel .glyphicon { display:none;}
+					.carousel-inner ol.carousel-indicators {
+				  	left: 20%;
+				    top: 70%;
+				    height: 20px;
+						margin:0;
+					}	
+			.services { padding:10px 10px;}
+        .services .container { 
+        		width:100%;
+        }
+
+        ul.prod-list li{
+        	margin-bottom: 10px;
+        }
+
+        .services p {
+				font-size: 1em;
+			}
+				.icon-sem a {
+					margin-bottom: 5px;
+				}
+				.member { padding: 40px;}
+    }
+
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+				#myCarousel .carousel-inner .carousel-caption { left:20%; top: 20%;}
+				#myCarousel .glyphicon { display:block;}
+				#myCarousel	.carousel-inner ol.carousel-indicators {
+				  	top: 67%;
+				  	height: 20px;
+				  	margin:0;
+				 }	
+        ul.prod-list li{
+        	margin-bottom: 40px;
+        }
+				.services {
+				/*	background:pink;*/
+				}
+        .services p {
+				font-size: 1em;
+
+			}
+				.icon-sem a {
+					margin-bottom: 5px;
+				}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+			/*==========  NAVIGATION ==========*/
+
+		#page-header .navbar .navbar-header {}
+		#page-header .navbar .navbar-header h1 {
+			text-align: center !important;
+		}
+
+		.navbar-nav {
+			float:none !important;
+			width: 80%;
+			margin: 0 auto;
+		}
+
+			/*==========  CAROUSEL ==========*/
+    	.team .contact h3 {/* font-size: 20px; */}
+    	/*#page-header .container { width: 90%;}*/
+   /* 	.carousel-caption { left:45%;}*/
+			#myCarousel .carousel-inner .carousel-caption {left: 29%;}
+					.carousel-inner ol.carousel-indicators {
+				  	left: 24%;
+				  	top: 70%;
+				  	height: 20px;
+				  	margin:0;
+				 }	
+			.services { 
+        	padding:100px 10px;
+        		/*	background:orange;*/
+        }
+
+			.services p { font-size: 1em;}
+			.services .container{ width:90%;}
+
+			/*==========  TEAM ==========*/
+
+			    	.team .container {width: 90%;}
+    	.team .contact .speakto { padding: 0 30px;
+    margin-bottom: 30px;}
+
+			.team { position:relative;}
+			.team h3 {		
+				/*text-align: center;*/
+   			font-size: 25px;
+   		    /*margin-top: -30px;*/
+   		  }
+
+   		 .team .team-description {
+   		 		text-align: center;
+   		 }
+
+   		.team .member {
+   			padding-bottom:10px;
+   		}
+
+   		.team hr {
+   			margin-top:15px;
+   			margin-bottom:15px;
+   		}
+   		 .team .contact .speakto {
+   		 	/* float: left; */
+   		 	/* width: 50%; */
+   		 	padding-left: 68px
+   		 }
+   		 .team .contact .social-media {
+   		 	float: right;
+    width: 50%;
+    padding: 30px;
+   		 }
+
+   		 .team .contact .social-media a{
+   		 	display:inline-block;
+   		 	padding:left:10px;	 	 
+   		 }
+   		 .social-media ul a{
+   				text-decoration: none;
+   		 }
+
+   		 .team .contact .social-media .social-icon  i{
+   			 padding-left: 10px;
+   			 font-size: 30px;
+   			 margin-bottom: 15px;
+			  }
+			  .fa-facebook-square{
+				 border-left: 3px solid rgb(54, 97, 163);
+				 color:rgb(54, 97, 163);
+				 }
+			  .fa-twitter-square {
+			  	border-left: 3px solid rgb(62, 166, 233);
+			  	color:rgb(62, 166, 233);
+			  }
+				.fa-linkedin-square {
+			  border-left: 3px solid rgb(0,119,181);
+			  color:rgb(0,119,181);
+			}
+
+
+			/*	a.social-icon ul li:hover{
+				 background: rgb(54, 97, 163);
+				 }
+				 	a:visited{
+				 	color: none;
+				 }
+				 	a:hover{
+				 background: rgb(54, 97, 163);
+				 }*/
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    		#myCarousel .carousel-inner .carousel-caption { 
+	    		left: 7%;
+	    		top: 9%;
+	    		width:1024px;
+    		}
+												.services {
+			/*		background:green;*/
+				}
+				.carousel-inner ol.carousel-indicators {
+				   margin:0;
+				   top: 70%;
+				   height: 20px;
+				   width: 20%;
+				   left: 67%;
+				 }
+				.services p {font-size: 1.2em; }
+				.team .container {width: 90;padding: 10px 10px 0px 10px;}
+				.team .member {/* width: 240px; */}
+				.team .contact {
+				       /* width: 700px; */
+				       /* position: absolute; */
+				       /* right: 0; */
+				       /* left: 50%; */
+				       /* top: 30%; */
+				    }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    				.carousel-inner ol.carousel-indicators {
+					}

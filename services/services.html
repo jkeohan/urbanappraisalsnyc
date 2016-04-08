@@ -1,0 +1,26 @@
+<!--ul>li*6>a-->	<!--.container>.row>.col-md-3.circledemo$*4>h4-->
+<div class="black">
+	<div class="topimg">
+		<div class="desc-wrapper"><p>Estate Planning/Settlement </p></div>
+	</div>
+</div>
+
+<div class="container main">
+	<div clas="row padded">
+	  <div class="servicelist col-xs-3">
+	  	<nav class="folder-nav">
+	  		<ul>
+	  			<li><h4>Our Services</h4></li>
+	  			<li ng-repeat="item in services">
+	  				   <a 
+	  				   	class="{{item.name.toLowerCase()}}"
+	      				ng-class="{active: item.selected}"
+	      				ng-href="#/services/{{item.shorturl}}"
+	      				ng-click="selectItem(item)">{{item.name}}
+	      				</a>		
+	  			</li>
+	  </div>
+	  <div ui-view ></div>
+	</div>
+</div>
+

@@ -1,0 +1,17 @@
+.blurb{
+	margin: 14px 20px;
+	padding:; 40px;
+	/* 	width:80%; */
+	/* 	font-family: "europa"; */
+	font-size: 39px;
+	line-height: 1.5em;
+	text-transform: none;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+.blurb p.suptext {
+	text-align:left;
+	font-size:20px !important;
+	line-height: 2;
+}

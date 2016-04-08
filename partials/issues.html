@@ -1,0 +1,20 @@
+1. ISSUE:Clicking on list item on appriasals.html page would take me back to home page
+	 RESOLUTION: changed url from '/appraisals/:item' to '/:item'
+	 RESOLUTION: added : to /item
+
+2. ISSUE:  http://localhost:8080/appraise.single-family.html 404 (Not Found)
+	 RESOLUTION:  updated from 'appraise' to 'partials/appriase' like so...return 'partials/appraise.' + e.item.toLowerCase() + ".html"
+
+3. ISSUE: http://errors.angularjs.org/1.3.10/$parse/syntax?
+	 RESOLUTION: 	updated ng-class="{{acitve: item.selected}}" to single curly braces.  If however the 
+	 ng-class is referencing just the var then it should be in double curly's
+
+4. ISSUE: clicking on a service does nothing.  I've added console.log to controller but it still does tnothing
+	 RESOLUTION: 
+
+5. ISSUE: Clicking service on home page will open services page but to same scrolled down location where
+the icon was clicked...not to top of page
+	 RESOLUTION:
+	 	Attemp1: added $window.scrollTo(0,0); to $StateChangeStart\$StateChangeSuccess but that causes all clicked links to go to top of page
+
+6. ISSUE: Appraisal links not updating url or content on page...only the topimg

@@ -1,3 +1,42 @@
+/*     
+		ul.categories li {
+			float: left;
+    position: relative;
+    width: 146px;
+    height: 150px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #e3e3e3;
+    text-align: center;
+		}
+
+		ul.categories li a {
+			display: block;
+    text-decoration: none;
+		}
+
+		ul.categories li a span {
+			display: block;
+    margin-top: 10px;
+    color: #0F2F4D;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600
+		}
+
+		ul.categories li a img {
+			position: absolute;
+    bottom: 0;
+    left: 7.5%;
+    width: 85%;
+    height: 83px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+		}
+*/
+
+
+
      @media only screen and (min-width : 320px) {
 
      		#page-header .container {
@@ -123,7 +162,7 @@
 			
 				width: 100%;
 			}
-    		#myCarousel .carousel-inner .carousel-caption { left:60%;top:20%;}
+    		#myCarousel .carousel-inner .carousel-caption {left: 10%;top:20%;}
 												.services {
 			}
 		
